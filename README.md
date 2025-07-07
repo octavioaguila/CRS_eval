@@ -8,6 +8,26 @@ Welcome to our project's repository!
 
 ## Dataset Comparison
 
+The dataset comparison experiments are organized in separate notebooks, each corresponding to a specific model and dataset combination. In each notebook, we fine-tune the model using either the PEARL or ReDial dataset and evaluate its performance across a wide range of metrics.
+
+The evaluated metrics include:
+Recall@1, BLEU Score, ROUGE-1, ROUGE-2, ROUGE-L, Distinct-1 intra/inter, Distinct-2 intra/inter, BERTScore (F1, Precision, Recall), Novelty Score, and Self-BLEU Score.
+Additionally, we test how the models respond to various user prompts.
+
+Below is a list of notebooks and their respective roles:
+
+DeepSeekPEARL.ipynb: Fine-tunes the DeepSeek model on the PEARL dataset. Includes full metric evaluation and prompt testing.
+
+LLama3PEARL.ipynb: Fine-tunes the LLaMA 3 model on the PEARL dataset. Same evaluation process as above.
+
+QwenPEARL.ipynb: Fine-tunes the Qwen model on the PEARL dataset. Includes all metric evaluations and response testing.
+
+DeepSeekReDial.ipynb: Fine-tunes the DeepSeek model on the ReDial dataset. Mirrors the evaluation and testing pipeline used with PEARL.
+
+LLama3ReDial.ipynb: Fine-tunes the LLaMA 3 model on the ReDial dataset with the same evaluation framework.
+
+QwenReDial.ipynb: Fine-tunes the Qwen model on the ReDial dataset, using identical evaluation procedures.
+
 ## Uncertainty
 
 The uncertainty experiments are fully contained in *Uncertainty.ipynb* notebook. 
