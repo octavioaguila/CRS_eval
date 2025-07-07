@@ -8,25 +8,46 @@ Welcome to our project's repository!
 
 ## Dataset Comparison
 
-The dataset comparison experiments are organized in separate notebooks, each corresponding to a specific model and dataset combination. In each notebook, we fine-tune the model using either the PEARL or ReDial dataset and evaluate its performance across a wide range of metrics.
+The dataset comparison experiments are organized in separate notebooks, each corresponding to a specific **model** and **dataset** combination. In each notebook, we fine-tune the model using either the **PEARL** or **ReDial** dataset and evaluate its performance across a wide range of metrics.
 
-The evaluated metrics include:
-Recall@1, BLEU Score, ROUGE-1, ROUGE-2, ROUGE-L, Distinct-1 intra/inter, Distinct-2 intra/inter, BERTScore (F1, Precision, Recall), Novelty Score, and Self-BLEU Score.
-Additionally, we test how the models respond to various user prompts.
+### 🔧 Evaluated Metrics
 
-Below is a list of notebooks and their respective roles:
+- **Recall@1**
+- **BLEU Score**
+- **ROUGE-1**, **ROUGE-2**, **ROUGE-L**
+- **Distinct-1 (intra/inter)**, **Distinct-2 (intra/inter)**
+- **BERTScore (F1, Precision, Recall)**
+- **Novelty Score**
+- **Self-BLEU Score**
 
-DeepSeekPEARL.ipynb: Fine-tunes the DeepSeek model on the PEARL dataset. Includes full metric evaluation and prompt testing.
+Additionally, we test how the models respond to various **user prompts** to assess their practical conversational behavior.
 
-LLama3PEARL.ipynb: Fine-tunes the LLaMA 3 model on the PEARL dataset. Same evaluation process as above.
+---
 
-QwenPEARL.ipynb: Fine-tunes the Qwen model on the PEARL dataset. Includes all metric evaluations and response testing.
+### 📒 Notebooks Overview
 
-DeepSeekReDial.ipynb: Fine-tunes the DeepSeek model on the ReDial dataset. Mirrors the evaluation and testing pipeline used with PEARL.
+#### 📘 PEARL Dataset
+- `DeepSeekPEARL.ipynb`:  
+  Fine-tunes the **DeepSeek** model on the **PEARL** dataset. Includes full metric evaluation and prompt testing.
 
-LLama3ReDial.ipynb: Fine-tunes the LLaMA 3 model on the ReDial dataset with the same evaluation framework.
+- `LLama3PEARL.ipynb`:  
+  Fine-tunes the **LLaMA 3** model on the **PEARL** dataset using the same evaluation framework.
 
-QwenReDial.ipynb: Fine-tunes the Qwen model on the ReDial dataset, using identical evaluation procedures.
+- `QwenPEARL.ipynb`:  
+  Fine-tunes the **Qwen** model on the **PEARL** dataset with complete metric analysis and response testing.
+
+#### 📗 ReDial Dataset
+- `DeepSeekReDial.ipynb`:  
+  Fine-tunes the **DeepSeek** model on the **ReDial** dataset. Follows the same evaluation structure used for PEARL.
+
+- `LLama3ReDial.ipynb`:  
+  Fine-tunes the **LLaMA 3** model on the **ReDial** dataset with identical procedures.
+
+- `QwenReDial.ipynb`:  
+  Fine-tunes the **Qwen** model on the **ReDial** dataset, with full metric and prompt evaluation.
+
+---
+
 
 ## Uncertainty
 
